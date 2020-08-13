@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <script>
+        var a = 10 + 50; // soma = 60
+        var b = 50 - 10; // subtração = 40
+        var c = 10 * 50; // multiplicação = 500
+        var d = 50 / 10; // divisão = 5
+        var e = 56 % 10; // resto de divisão = 6
+        var f = 50; f++; // increment = 51
+        var g = 50; g--; // descement = 49
+
+        document.write(
+        '<br> soma ', a,
+        '<br> subtração ', b,
+        '<br> multiplicação', c,
+        '<br> divisão ', d,
+        '<br> resto de divisão', e,
+        '<br> increment ', f,
+        '<br> decrement ', g
+        );
+
+        /*
+        Você pode obter o resultado de uma expressão de string usando a função eval (), que recebe um argumento de expressão de string como eval ("10 * 20 + 8") e retorna o resultado. Se o argumento estiver vazio, ele retorna indefinido .
+        */
+
+        document.write('<br> eval() calcula toda expressão dentro de uma string 10 * 20 + 8 = ', eval('10 * 20 + 8'))
+        
+        var test = 38 % 5;
+        document.write('a',test) // verifica o resto da divisão
+    </script>
+</body>
+</html>
