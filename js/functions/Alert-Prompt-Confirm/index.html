@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, Prompt e Confirm</title>
+</head>
+<body>
+    <script>
+        
+        var user = prompt('Digite seu nome aqui');
+        if(user == null){user = "Usuário Não Encontrado ;D";}
+        alert(`Olá! ${user}\nSeja Bem-vindo de volta\nao curso de Javascript da SoloLearn`);
+
+        var result = confirm('Deseja Realmente Sair dessa Página?');
+        if(result == true){
+            alert('obrigado pela visita')
+        }else { 
+            alert('Obrigado por Permanecer conosco')
+        }
+    </script>
+</body>
+</html>
