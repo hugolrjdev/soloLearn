@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        
+        function myFunction(){
+            alert("Chamando uma função, deu Rock");
+        }
+
+        myFunction();
+
+        function sayHello(name){
+            alert('ola!  ' + name);
+        }
+        sayHello('Valentina Lélio')
+        sayHello('Thuany Lima')
+        sayHello('Hugo Lélio')
+
+        function ageAndName(name, age){
+            document.write('Meu nome é ' + name + ' e minha idade é ' + age + ' anos <br/>')
+        }
+
+        ageAndName('Hugo Lélio', '32');
+
+        function question1(x,y){
+            if(x>y){    
+                document.write(x, '<br/>');
+            } else {
+                document.write(y, '<br/>');  
+            }
+        }
+
+        question1(5,8, "<br/>");
+
+        function fRetorno (a, b){
+            return a * b;
+        }
+
+        var x = fRetorno(10,8);
+        document.write(x, '<br/>');
+
+
+        function addNumbers (a, b){
+            var c = a + b;
+            return c;
+        }
+        document.write(addNumbers(1,7));
+    </script>
+</body>
+</html>
