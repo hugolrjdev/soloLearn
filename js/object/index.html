@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        var person = {
+            name: 'hugo',
+            age: '32',
+            favColor: 'blue',
+            gender: 'M'
+        };
+
+        var nameUser = person.name;
+        var ageUser = person['age'];
+
+
+        var course = {name: 'JS', aulas:41}
+        document.write(course.name.length);
+        //Outputs 2
+
+
+        /*
+        Como você já sabe, document.write () gera dados. 
+        A função write () é na verdade um 
+        método do objeto de documento .
+        */
+        //objectName.methodName ()
+        document.write ("Este é algum texto");
+        /*O Construtor de Objetos*/
+
+
+        function fPerson(name, age, color){
+            this.name = name;
+            this.age = age;
+            this.favColor = color;
+        }
+
+        var person1 = new fPerson('Thuany Lima', 23, 'black');
+        var person2 = new fPerson('Valentina Lélio', 3, 'green');
+
+        document.write(person1.favColor) //output black
+        document.write(person2.name) //output Valentina Lélio
+
+        var thuany = new fPerson('Thuany Lima', 23);
+        var valentina = new fPerson('Valentina', 3);
+
+        document.write(thuany.name, valentina.name,)
+
+
+     </script>
+</body>
+</html>
