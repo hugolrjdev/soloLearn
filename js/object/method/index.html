@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method</title>
+</head>
+<body>
+    <script>
+        function person(name, age){
+            this.name= name;
+            this.age = age;
+            this.yearOfBirth = bornYear;
+            this.changeName = function (name) {
+                this.name = name;
+            }
+            function bornYear(){
+                return 2020 - this.age;
+            }
+        }
+
+    
+        var person1 = new person('Hugo Lélio', 32);
+        document.write( person1.yearOfBirth() )
+    </script>
+</body>
+</html>
