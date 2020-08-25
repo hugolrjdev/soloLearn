@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - Core Objects</title>
+</head>
+<body>
+    <script>
+        var cursos = new Array ('HTML', 'CSS', 'JS');
+        var curso = cursos[0];
+
+        cursos[1] = 'c++';
+
+
+        cursos[0] = 'mysql';
+        cursos[4] = 'illustrator';
+        cursos[5] = 'photoshop';
+        
+        var acomodacao = new Array('Enfermaria', 'Apartamento')
+
+        var operadoras = [];
+
+        operadoras[0] = 'unimed';
+        operadoras[1] = 'hapvida';
+        operadoras[2] = 'amil';
+        operadoras[3] = 'Bradesco';
+
+        var produtos = new Array();
+        produtos[0] = 'SaluteMax';
+        produtos[1] = 'Nosso Plano';
+        produtos[2] = 'Amil S380';
+        produtos[3] = function helloRock(){
+            alert('deu rock');
+        }
+        produtos[4] = new Array ('com coparticipação', 'sem coparticipação')
+        produtos[5] = acomodacao;
+
+        // adicionar funções no array e array dentro do array
+
+        /*
+        O método concat () do JavaScript permite que você junte arrays e crie um array totalmente novo . 
+        */
+
+        //Exemplo:
+
+        var planos = operadoras.concat(produtos)
+        
+
+        var person = [];
+        person['nome'] = 'hugo lélio';
+        person['idade'] = 32;
+
+        /*
+        Como a matriz de person é tratada como um objeto , os métodos e propriedades de matriz padrão produzirão resultados incorretos. Por exemplo, person.length retornará 0.
+        */
+
+        //qual a raiz quadrada
+
+        var queroARaiz = prompt('de qual numero deseja saber a raiz quadrada?')
+        var result = Math.sqrt(queroARaiz);
+        document.write('A Raiz quadrada de ' + queroARaiz + ' é igual a ' + result)
+
+    </script>
+</body>
+</html>
