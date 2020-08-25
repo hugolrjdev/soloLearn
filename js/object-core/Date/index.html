@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <script>
+
+        var d = new Date();
+        
+
+        function print (){
+        var dataCompleta = d;    
+        var ano = d.getFullYear();
+        var mes = d.getMonth();
+        var data = d.getDate() ;
+        var dia = d.getDay();
+        var horas = d.getHours();
+        var minutos = d.getMinutes();
+        var segundos = d.getSeconds();
+        var milisegundos = d.getMilliseconds();
+
+
+        document.body.innerHTML = `
+        'dataCompleta' ${dataCompleta}<br/><br/> 
+        'ano'  ${ano}<br/><br/> 
+        'mes' ${mes}<br/><br/> 
+        'data' ${data}<br/><br/> 
+        'dia' ${dia}<br/><br/> 
+        'horas' ${horas}<br/><br/> 
+        'minutos' ${minutos}<br/><br/> 
+        'segundos' ${segundos}<br/><br/> 
+        'milisegundos' ${milisegundos}<br/><br/> 
+        `;
+
+        }
+        setInterval(print, 1000);
+       
+    </script>
+</body>
+</html>
