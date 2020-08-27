@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+</head>
+<body>
+
+
+    <div id = "example"> 
+        <p> algum texto </p> 
+        <p> algum outro texto </p> 
+      </div>
+
+    <script>
+        
+       var selecionaId = document.getElementById('example');
+       console.log(selecionaId, 'seleciona exatamento o Id que pediu');
+       var arrayDeFilhosDoElemento = selecionaId.childNodes;
+       console.log(arrayDeFilhosDoElemento, 'retorna uma matriz de nós filhos de um elemento');
+       var primeiroFilho = selecionaId.firstChild;
+       console.log(primeiroFilho, 'elemento. firstChild retorna o primeiro nó filho de um elemento');
+       var ultimoFilho = selecionaId.lastChild;
+       console.log(ultimoFilho, 'elemento. lastChild retorna o último nó filho de um elemento.')
+       var noNosFilhos = selecionaId.hasChildNodes();
+       console.log(noNosFilhos, 'elemento. hasChildNodes retorna true se um elemento tiver qualquer nó filho, caso contrário, false.')
+       var proximo = selecionaId.nextSibling;
+       console.log(proximo, 'elemento. nextSibling retorna o próximo nó no mesmo nível de árvore.')
+       var anterior = selecionaId.previousSibling;
+       console.log(anterior, 'elemento. previousSibling retorna o nó anterior no mesmo nível de árvore.')
+       var renatoRusso = selecionaId.parentNode;
+       console.log(renatoRusso, 'elemento. parentNode retorna o nó pai de um elemento. Podemos, por exemplo, selecionar todos os nós filhos de um elemento e alterar seu conteúdo:');
+
+    </script>
+</body>
+</html>
