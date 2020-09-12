@@ -30,14 +30,20 @@
 
     <script>
 
-        var t = setInterval(move, 500);
+        var t = setInterval(move, 30);
 
         var pos = 0;
         var box = document.getElementById('box');
 
         function move(){
-            pos +=1;
-            box.style.left = pos + 'px';
+
+            if(pos >= 150){
+                clearInterval(t);
+            } else {
+                pos +=1;
+                box.style.left = pos + 'px';
+            }
+
         }
 
     </script>
